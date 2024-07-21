@@ -24,7 +24,7 @@ void myStrcat(char *dest, const char *src)
 
 int main()
 {
-    int n = 10;
+    int n = 1000;
     char arr[1000][20];
 
     myStrcpy(arr[0], "3");
