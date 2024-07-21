@@ -1,9 +1,13 @@
 #include <stdio.h>
+
 void reverse(int arr[], int start, int end);
+
 int main() {
     int size;
+
     printf("enetr size\n");
     scanf("%d",&size);
+    
     printf("enter array elements\n");
     int arr[size];
 

@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+void put(int key, int value);
+int get(int key);
+void delete(int key);
+void display();
 int arr[100];
 
 void put(int key, int value) {
@@ -10,7 +14,7 @@ int get(int key) {
     return arr[key] - 1; 
 }
 
-void remove(int key) {
+void delete(int key) {
     arr[key] = 0;  
 }
 
@@ -33,7 +37,7 @@ int main() {
     printf("Value at key 30: %d\n", get(30));
 
     printf("Removing key 20\n");
-    remove(20);
+    delete(20);
 
     printf("Value at key 20 after removal: %d\n", get(20));
 
